@@ -1,0 +1,106 @@
+ ## external css (good)
+ 1.claner html,2.use every where, 3.easy maintinance
+ css vs html-understanding ,management , reuse,
+rel,fevicon for desining 
+## in some case internal good ,dont use inline
+bank gmail 
+internal line 
+## semantic element
+header ,section,footer (help full for visual impaired-acssesibility)
+reason--seo,developer help,ranking website-contant,views,
+## alt-
+image not but text visi
+
+ ## overflow property
+ scroll bar 
+ auto,
+ ,visibile is a default nature 
+ ## list of icon
+ 1.order list
+ 2.unorder list
+ spg-  (equations) not brick 
+ advantage -
+ 1.not brick
+ 2.good quality
+ 3.less space (kb)
+ ## descendant
+ ## sibling combinators
+ 1.adjacent +
+ 2.general ~
+ ## box html
+ block - fully follow h&w ,aiways starts from nem line, side by side ,
+ inline - not follow ,
+ ##### main jc-x axis
+ ### cross.-align indent -y axis,
+ ## flex grow-shrink
+ 1. space given equaly 
+ 1.by default shrink 1,
+ 2.shrink in equaly in ratio,
+ ## casscading- whoes last win - OVERRIDING,
+ *(star) universal selctor
+ flex only (1 d)
+ grid only (2 d)
+ fr - fractional unit
+ gap- row,coloman
+ ## Z index
+ grid auto-(RAM-repeat auto minmax)
+ masnery notes***
+ ## responsive 
+1. look in nicer on  different sizer
+2. 
+## (media query),flex,drid -in css ## DAY 18 (9 JAU 2026)
+overriding-first
+## Pseudo property(:) ###
+  : pseudo class selector
+  :: pseudoelement selector
+  first , last child(use nth child)
+  ## pattern
+  even
+  odd
+  use AP for  color 3 , 6
+  -n+notever u want first 3 4 5
+first of child,type
+nth of child,type
+last of child,type
+:hover-pointerchange color
+:active-when click change color
+transform-for biger size times,rotate(degree)
+transition-timer
+animate-tranform(gpu)
+bad-w&h (cpu)-no animate
+for up down r&l-translatey,x
+ease in,slow
+out-start high&end slow
+in out-slow,slow
+## inheritance ##
+user agent style- browser style
+anker(a) not inherit
+
+## dom html ##
+document(object) to access dom 
+## html colllection
+ 1.tElementsbytagName getElementsbyclassName
+
+
+ querySelector &querySelectorAll
+ 1.elist-forEach
+ css selector
+ ### (12 jan 2026)##
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+root(global bariable)-html element 
+color -primary,secondry,accent,
+by default if thesecolor are not these color,
+1rem= 16px,for change sizes (root valu)
+em check parent value-=sction->div->h1
+
+

@@ -1,0 +1,4 @@
+math.ceil(4.2) -5
+math.floor(4.5) -4
+infinity type of number 4/0
+-4/0 -infinity
