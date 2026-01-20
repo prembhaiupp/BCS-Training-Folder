@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background: plum;
+     margin: 0;
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+      }
+
+      button {
+        font-size: 2rem;
+      }
+
+    </style>
+</head>
+<body>
+    
+    <button onclick="start()">▶️</button>
+    <button onclick="pause()">⏸️</button>
+    <button onclick="stop()">⏹️</button>
+
+    <script>
+      let colorInterval;
+        function pause() {
+          console.log("pause")
+          let i=0
+
+        }
+
+          function start() {
+        console.log("Starting...");
+        
+        
+        
+
+      
+
+     
+       
+    //     const nkInterval = setInterval(() => {
+    //     console.log("hi, NK 🎊");
+    //   }, 3000);
+
+    //   setTimeout(() => {
+    //     clearInterval(nkInterval);
+    //   },9000);
+       const colors = ["crimson","orange","teal","pink"];
+     let i=0;
+         clearColor=setInterval(() => {
+    if (i == colors.length){
+        i = 0;
+      }
+  document.body.style.background = colors[i];
+  i++;
+},2000);
+}
+
+
+      function stop() {
+        console.log("Stopping...");
+      }
+      colorInterval(setInterval);
+
+      
+    </script>
+</body>
+</html>

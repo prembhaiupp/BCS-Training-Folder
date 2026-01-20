@@ -85,8 +85,30 @@ document(object) to access dom
  querySelector &querySelectorAll
  1.elist-forEach
  css selector
- ### (12 jan 2026)##
- 
+ ### (12 jan 2026)## js
+ appendchild- take1 arguement
+ append - take multi.arguement
+ inner text <>
+ inner html  
+
+ ### hof- reducce,filter,map,sort, find 
+### callback ## 13 jan 2026 day 20
+settimeout will deside to (printHi)-callback =>{}
+
+hof - decides when to call the "callback function"
+type of call back function 
+1.sync -no time involvement -exam.
+2.Async - time involvement- work like event completes-action taken,
+## nested callback##
+1.callback inside callback
+2.bad code bsz- debuging very hard, not read properly 
+
+
+
+
+
+
+
 
  
 
