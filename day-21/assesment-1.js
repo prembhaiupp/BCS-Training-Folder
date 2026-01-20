@@ -11,22 +11,36 @@ const moreOrders = [
   { id: 7, dishName: "Ramen", category: "Japanese", chef: "Yuki Tanaka", ratings: [5, 4, 5] }
 ];
 
-  function getFirstNDishNames(orders,n) {
-                     const names =orders.slice(0,n)
-                     .map(order=>order.dishName).join(", ")
-               return names 
- 
- }
-  console.log(getFirstNDishNames(orders,3));
-  // Burger, Pizza, Sushi
-  console.log(getFirstNDishNames(orders,1));
-// Burger
-
-
-
-
-
-
+const getHighRatedDishes=(baseOrders, extraOrders = [])=>{
+    const total=[...baseOrders,...extraOrders]
+    total.filter((order)=>order.ratings.every((rating)=>rating>=4))
+   .map((order)=>order.disname)
+    return total
 
     
- 
+
+};
+console.log(getHighRatedDishes(orders));
+// Burger, Sushi, Pasta
+
+console.log(getHighRatedDishes(orders, moreOrders));
+// Burger, Sushi, Pasta, Tacos, Ramen
+
+console.log(getHighRatedDishes([], moreOrders));
+// Tacos, Ramen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            height:50rem;
+            width: 40rem;
+            background:black ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .game-board{
+            height:40rem;
+            width: 30rem;
+            background: burlywood;
+            grid-template-columns: repeat(16,1fr);
+            grid-template-rows: repeat(16,1fr);
+           
+        }
+        .score{
+         background: green;
+         padding: 10px 20px;
+         border-radius: 20px;
+        }
+        .snake{
+            background: black;
+            border:2px ;
+
+        }
+        .head{
+            background: url(/snake.jpg);
+            background-size:100% 100% ;
+        }
+        .food{
+            background:url(/frog.webp);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+     <h2 class="score"> score:<span>0</span></h2>
+        <div class="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

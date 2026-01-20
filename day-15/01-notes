@@ -97,11 +97,75 @@ settimeout will deside to (printHi)-callback =>{}
 
 hof - decides when to call the "callback function"
 type of call back function 
-1.sync -no time involvement -exam.
-2.Async - time involvement- work like event completes-action taken,
+1.sync -no time involvement -exam-map,[1,2,3].map(x=>x*2)
+2.Async - time involvement- work like event completes-action taken,exa-setTimeout
 ## nested callback##
 1.callback inside callback
 2.bad code bsz- debuging very hard, not read properly 
+### 20 jan 2026 ,day 22 topic-theory ##
+-NAME-Brendan Eich
+-java$ script 
+-js+livescript=ECMAscript(javascript)
+-microsoft-jscript
+-es4 not version launch
+-meeting-TC39
+-UPDATE KNOW-ECMA39,PROPOSAL
+-STEGE 2 PLUGIN-N&O FEATURE SHOULD BE WORK 
+-OLD VERSION- GOV.
+-BABLE-CHANGE NEW TO NORMAL ,THOSE WHO R NOT UPDATE (WHO CHANGE -      THOSE WHO R PRAPOSAL)
+-stege 5
+1. 0 stage idea
+2. 1 stage terning point-bable plugin
+3. 2 stage -security
+4. 3 stage Beta version (test)
+5. runing for all
+-hoisting
+console.log(a)
+var a=10;
+compiler-change human code to 1' s 0' s
+JS-jit-just in time-> compilation
+happends in 2 phase
+1. compilation- 
+    console.log(a)-skip
+var a=10; -js guy ,do u know a? no.note a (context)-undifine
+console.log(a) skip
+
+2. execution
+console.log(a)do u know a? yes . then give me value-undefine
+var a=10; do u know a? yes.assign a is 10(context)
+console.log(a)do u know a? yes.then give me value-10
+ ,,,,, what happend when we use (let-not insialize value, TDG(tampral dead zone), const )place of (var)
+
+-function declaration hoisted but function expression not hoisted
+-
+-
+## js singal or multi thread engine ##
+i5 ,i3 ,i8 every thread (2)
+thread for runing programe,contex swithing-process
+java script single thread it is asynconous
+deadlock,games in multi thread
+concrant- everything complete on the time (redusing time)
+stack-first in last out,last in first out - 
+(call stack)js engine work for it only,
+ callback quaue- fifo/lilo
+web APIS-await:
+🔃event loop-checking loon when it is empty,not empty not run
+native code is -browser code
+take time -web API 
+### promise ### final topic-advance js
+1. pendding
+2. fulfill
+3. rejected
+create promise
+datatype-promise object
+resolve-fulfill,reject-reject
+-then-resolve,cath-for reject( fail hence retry logic),finally -mathods
+use for asyncronous code
+-promise will wait-resolve-fulfill,reject-reject; time  ,befor resolve-pendding 
+console.log have return-undefine
+
+
+
 
 
 
