@@ -115,8 +115,8 @@ type of call back function
 -BABLE-CHANGE NEW TO NORMAL ,THOSE WHO R NOT UPDATE (WHO CHANGE -      THOSE WHO R PRAPOSAL)
 -stege 5
 1. 0 stage idea
-2. 1 stage terning point-bable plugin
-3. 2 stage -security
+2. 1 stage terning point-bable plugin,(proposal)
+3. 2 stage -security,(screening)
 4. 3 stage Beta version (test)
 5. runing for all
 -hoisting
@@ -148,10 +148,16 @@ concrant- everything complete on the time (redusing time)
 stack-first in last out,last in first out - 
 (call stack)js engine work for it only,
  callback quaue- fifo/lilo
-web APIS-await:
+web APIS setTimeout,event listen,promise-await:
 🔃event loop-checking loon when it is empty,not empty not run
 native code is -browser code
 take time -web API 
+callback - 2-normal,microtask(for vip)
+consol.log(1) then this
+setTimeout(()=>{
+  console.log(2)
+},0); this
+promise.resolve(4).then.console.log((x)),high priority
 ### promise ### final topic-advance js
 1. pendding
 2. fulfill
@@ -163,8 +169,43 @@ resolve-fulfill,reject-reject
 use for asyncronous code
 -promise will wait-resolve-fulfill,reject-reject; time  ,befor resolve-pendding 
 console.log have return-undefine
+-- promise use for geting data from API
+- main thread free-call stack
 
-
+### json,js difference
+1. json-every thing in ""
+2. null,boolean,array,number,object,string,allow  in json
+3. no function ,undefine,NaaN also not allow in json,
+  --O(n) times loop runing
+  ,O(n^2)
+  how to get json
+  ## WEB ARCHITECTURE ##
+  PPFR
+  GRANDFATHER OF JSON-XML
+  FRANTAN (2 THINGS SEND)-BACKEND go,python language (BOTH TALK IN JSON MEDIUM)-DATA BASE
+  - ALL LANGUAGE UNDERSTAND 
+  - if i can use multipul language-micro service architechture 
+  - monolith creat first
+  - advantages of json-
+  - 1. we can use diff backend &frantend
+  - 2. mix both(together)
+  - 3. reuse,platform independent( android,netflix phone)
+  - ## how to use pawer of json &promise ##
+  - which url give data-API
+  - SVG ,URL(REST Endpoint or REST API
+  - REST(SOAP-XML)-CRUD-JSON) PAST IN FETCH
+    FETCH DATATYPE - PROMISE'
+  - FORMATE IS JSON,DTYPE-STRING
+  - ## how to multipul promise handle ##
+  - all-on same time what ever we r give order,**promise.all
+  - any one fail all fail in promise 
+  -  in race what ever come first print,other promises will cancele,**promise.race
+  -  when first one error,promise.race error
+  -  when all resole any =race
+  -  any one resolve - then all
+  -  if all promise rejected- caught all promise,**promise.any
+  -  allSetteled-always                      **promise.allSetteled
+  -  one reject-show reason
 
 
 
