@@ -206,19 +206,12 @@ console.log have return-undefine
   -  if all promise rejected- caught all promise,**promise.any
   -  allSetteled-always                      **promise.allSetteled
   -  one reject-show reason
-
-
-
-
-
-
-
-
-
- 
-
-
-
+  -  ### day 23, date 22 jan 2026 ###
+  -  <promise>use array
+  -  async/awiat lok like sync code
+  -  top level await ,type module
+## try &catch - for finding error
+## mock api
 
 
 
