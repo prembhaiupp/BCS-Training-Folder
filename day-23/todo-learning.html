@@ -7,6 +7,18 @@
 </head>
 <body>
     <h2>my learning list</h2>
-    <ol>learning</ol>
+    <ol class="learning-take"></ol>
+    <script>
+        async function getLearning(){
+            const res = await fetch(
+                "https://6971d21f32c6bacb12c49d86.mockapi.io/learning",
+                {method:"GET"},
+            );
+            const learning = await res.json();
+            console.log(learning);
+            
+        }
+    </script>
+
 </body>
 </html>

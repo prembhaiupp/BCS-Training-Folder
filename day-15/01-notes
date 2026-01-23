@@ -212,11 +212,29 @@ console.log have return-undefine
   -  top level await ,type module
 ## try &catch - for finding error
 ## mock api
-
-
-
-
-
+## day 24 ,23 jan 2026 , react ################################33
+easyto make responce
+component= UI+logic
+sinc-data or component
+feature or react
+1. spa-single page aplication
+2. spa is good bsz when refresh it will still there but classic website loose wholething
+spa- did first html then it json
+mpa                                      spa
+all loding in same time,refress          first loding take more time thenless-lessnorefress
+                                          seo(serch engine optimization) bad
+3. ......
+root.render-change jsx to js
+boosting-starting(busness )
+stricmode -for double checks for anny error
+### react---------- import /export
+named(many file) ,destracture {}
+default(one main file) ,no
+add new name use(as)sintax
+inside writen- use inter{}
+-smart, and presentation componant-mathods
+App - smart componant(holds data)
+User - presentation componant (look up your ui,styling perpose only) reuse more 
 
 
 
