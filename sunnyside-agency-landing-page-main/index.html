@@ -18,7 +18,9 @@
   }
   .arrow{
    text-align: center;
-   padding-top:8rem;
+   padding-left: 35rem;
+
+   
   }
   .sec-heading{
     font-size: 3rem;
@@ -26,26 +28,36 @@
     justify-content: center;
     align-items: center;
     color:white;
-    padding-top: 7rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
     
   }
-   .header h4 {
+   .header  {
+    padding: 0rem;
     color:white;
-    display:inline;
-    padding: 0rem 10rem 0rem 5rem;
+    display:flex;
+    justify-content: space-between;
+
+    .header-content{
+      font-weight: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      /* justify-content: space-between; */
+    }
     
-   
-    
-    
-    
-    
+    /* padding-top: 0; */
+
+
    }
-   .header button h4 {
-    color: black;
-    display:inline;
-    
-
-
+   .header button  {
+    color:white;
+    background-color: rgb(198, 212, 241);
+    border-radius: 1rem;
+    border: 0;
+    width: 5rem;
+    /* display:inline; */
+    /* padding-bottom: 10rem; */
    }
   
   * {
@@ -63,39 +75,40 @@
           background: #fffbf8;
           width: 50%;
           height:80%;
+        
         h2{
            margin-top: 0px;
             font-size: 1.8rem;
             color: #263240;
         }
-  
+  }
          p{
              font-family: "Barlow", sans-serif;
-            color:hsl(232, 10%, 55%);
-             font-weight: 500;
+            color:hsl(232, 7%, 45%);
             line-height: 1.5;
-         }
+            letter-spacing: 1px;
+            padding-bottom: 5rem;
+            font-size: 15px;
+            
+         
   
           a {
              text-transform: uppercase;
             font-weight: bold;
             color: #263240;
+           
+            
+            
           }
-        };
-    
-       
-
-       
-      
+        }
+        
     
 .image-juece {
-   
-     height: 24.5rem;
-     width:20rem ;
-     background-size: cover;
-     display: flex;
-    
+   display: flex;
+   width: 50rem;
+    height:24.5rem;
 }
+        
 .text-both{
    display: flex;
 }
@@ -116,31 +129,62 @@
     padding-top: 20rem;
    
   }
+  
    
 .cover-title{
-  img{
-    width:10%;
-    
-  }
-   .content-body{
-     font-family: "Fraunces", serif;
-          padding: 10rem 5rem;
-          text-align: center;
+  display: flex;
+  font-family: "Fraunces", serif;
           background: #fffbf8;
-   }
-}
-  .box-nine{
-    background-color: aquamarine;
-    text-align: center;
-    justify-content: center;
-    height: 25rem;
-    padding-top: 10rem;
+          text-align: center;
+          height: 35rem;
+          width: 79rem;
+          padding-top: 5rem;
+          gap:5rem ;
+          padding-right: 5rem;
+  img{
+    width:7rem;
+    border-radius: 10rem;
   }
-  
-  
    
+   }
+   h3{
+    padding-left: 30rem;
+    line-height: 2rem;
+    letter-spacing: .3rem;
+    color: darkgrey;
+    background-color: #fffbf8;
+    height: 10rem;
+    padding-top: 5rem;
+
+
+   }
   
   
+  .base-line{
+    background-color: aquamarine;
+    text-align:center ;
+   padding-top: 4rem;
+   
+    height: 20rem;
+  
+  
+.image-ot{
+  padding-top: 2rem;
+ justify-content: center;
+ display: flex;
+ gap: 2rem;
+ 
+}
+}
+  
+  .box-nine{
+    padding-top: 5rem;
+ justify-content: center;
+  display: flex;
+ gap: 4rem;
+ 
+  }
+
 
   
   </style>
@@ -149,21 +193,27 @@
   
 
 <div class="first-heading">
- <div><h3 class="sec-heading"> We are creatives</h3>
+
   <div class="arrow">
     <img src="./images/icon-arrow-down.svg">
   </div>
   <div class="header">
+    <div class="header-img">
+    <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="header-content">
    <h4>About</h4>
    <h4>Services</h4>
    <h4>Projects</h4>
    <button><h4>Contact</h4></button>
+   </div>
   </div>
+   <div><h2 class="sec-heading"> We are creatives</h2>
  </div>
 </div>
 <div class="container1">
   <div class="text-container">
-   <img src="./images/desktop/image-transform.jpg">
+ 
   <!-- </div> -->
    <!-- <div class="box1"> -->
       <h2>Transform your brand</h1>
@@ -171,6 +221,7 @@
          Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
       <a href="">Learn more</a>
+        <img src="./images/desktop/image-transform.jpg">
   </div> 
 
  <div class="text-container">
@@ -206,30 +257,36 @@
     </p>
   </div>
 </div>
+<h3>CLIENT TESTIMONIALS</h3>
 <section class="cover-title">
-   <h1>Client testimonials</h1>
-      <img src="./images/image-emily.jpg">
    <div class="content-body">
+    <img src="./images/image-emily.jpg">
    <p>We put our trust in Sunnyside 
     and they delivered, making sure our needs were met and deadlines were always hit.</p>
-   <a> Emily R.
-    Marketing Director</a>
+   <a> Emily R.</a>
+   <br>
+    <a href="">Marketing Director</a>
    </div>
    
-     <img src="./images/image-thomas.jpg">
+     
    <div class="content-body">
+    <img src="./images/image-thomas.jpg">
    <p>Sunnyside’s enthusiasm coupled with their keen
      interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-   <a>Thomas S.
-    Chief Operating Officer</a>
+   <a>Thomas S.</a>
+   <br>
+    <a href="">Chief Operating Officer</a>
   </div>
   
-    <img src="./images/image-jennie.jpg">
+    
   <div class="content-body">
+    <img src="./images/image-jennie.jpg">
     <p>end result! Our sales increased 
       over 400% when we worked with Sunnyside. Highly recommended!</p>
-   <a>Jennie F.
-   Business Owner</a>
+   <a>Jennie F.</a>
+   <br>
+   <a href="">Business Owner</a>
+ </div>
  </div>
 </section>
   
@@ -240,18 +297,16 @@
     <img src="./images/desktop/image-gallery-orange.jpg">
     <img src="./images/desktop/image-gallery-sugarcubes.jpg">
   </div>
+  
 <div class="base-line">
+  <h2>sunnyside</h2>
  <div class="box-nine">
-  <div>
      <a>About</a>
       <a>Services</a>
       <a>Projects</a>
-      <a>Contact</a>
   </div>
   <div class="image-ot">
-    
     <img src="./images/icon-facebook.svg">
-    <img src="./images/icon-hamburger.svg">
     <img src="./images/icon-instagram.svg">
     <img src="./images/icon-pinterest.svg">
     <img src="./images/icon-twitter.svg">
