@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+</head>
+<body>
+    <form class="form-container">
+    <label for="user-name">Name:</label>
+    <input id="user-name" type="text" placeholder="type" />
+     
+       
+       
+
+      <label for="user-password" >Password:</label>
+      <input
+        id="user-password"
+        type="password"
+        placeholder="******"
+        value="abc123"
+        disabled 
+        />
+        <!-- <div class="tdt">
+            <img src="assets/eyeIcon.svg"height="20">
+
+      </div>
+     -->
+      <label>
+        Age:
+        <input min="18" max="60" type="number" placeholder="Age" />
+      </label>
+      <label>
+        Date of Birth:
+        <input type="date" />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" />
+      </label>
+
+      <!-- <button>Cancel</button> -->
+      <!-- <button type="submit">Save</button> -->
+      <h3>Gender</h3>
+      <label> <input type="radio" name="gender" /> Male </label>
+      <label> <input type="radio" name="gender" checked /> Female </label>
+      <label> <input type="radio" name="gender" /> Others </label>
+
+      <h3>Hobbies</h3>
+
+      <label> <input type="checkbox" name="hobbies" checked /> Cricket </label>
+      <label> <input type="checkbox" name="hobbies" /> Football </label>
+      <label> <input type="checkbox" name="hobbies" disabled /> Chess </label>
+      <label> <input type="checkbox" name="hobbies" /> Horse Riding </label>
+
+      <h3>City</h3>
+      <select>
+        <option value="">-- Please Select City --</option>
+        <optgroup label="uttar pradesh">
+          <option value="ali">Aligarh</option>
+          <option value="ha">Hathras</option>
+          <option value="ag">Agra</option>
+          <option value="ka">Kashganj</option>
+          <option value="ma">Mathura</option>
+          <option value="ka">Kanpur</option>
+          <option value="ba">Baraili</option>
+          <option value="pi">Pilibhit</option>
+          <option value="sha">Shaharanpur</option>
+          <option value="un">Unnao</option>
+          <option value="gh">Ghaziabad</option>
+          <option value="lc">Lockhnow</option>
+          <option value="ka">Kannauj</option>
+          <option value="ba">Ballia</option>
+          <option value="go">Gorakhpur</option>
+        </optgroup>
+
+        <optgroup label="Karnataka">
+          <option value="blr">Bangolre</option>
+        </optgroup>
+
+        <optgroup label="Maharashtra">
+          <option value="bom">Mumbai</option>
+          <option value="pun">Pune</option>
+        </optgroup>
+      </select>
+
+      <h2>Corresponding Address </h2>
+      <level>Address:
+        <input type="text"/>
+        District:<input type="text"/>
+        Pin code:<input type="text"/>
+      </level>
+
+      <div>
+        <h3>Comments</h3>
+        <textarea
+          rows="10"
+          cols="30"
+          placeholder="What's on your mind?"
+        ></textarea>
+      </div>
+        </form>
+</body>
+</html>

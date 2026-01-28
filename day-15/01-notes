@@ -212,20 +212,23 @@ console.log have return-undefine
   -  top level await ,type module
 ## try &catch - for finding error
 ## mock api
-## day 24 ,23 jan 2026 , react ################################33
+## day 24 ,23 jan 2026 , react ################################33 COMPONANT ###
 easyto make responce
 component= UI+logic
+2 rule= first letter should be capital ,div in jsx
 sinc-data or component
 feature or react
 1. spa-single page aplication
 2. spa is good bsz when refresh it will still there but classic website loose wholething
-spa- did first html then it json
-mpa                                      spa
-all loding in same time,refress          first loding take more time thenless-lessnorefress
-                                          seo(serch engine optimization) bad
+spa- did first html then it json ,,,, 
+mpa                                          spa
+all loding in same time,refress          first loding take more time thenless-lessnorefress                         no refres,smooth performance
+html send only                               first html then json
+                                          seo(serch engine optimization) bad,initial page loding go so ranking down 
 3. ......
 root.render-change jsx to js
-boosting-starting(busness )
+boosting-starting(busness ).only root in the body
+                                     
 stricmode -for double checks for anny error
 ### react---------- import /export
 named(many file) ,destracture {}
