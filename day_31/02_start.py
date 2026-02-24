@@ -15,8 +15,8 @@
 # print(quote.find("something"))  # 13
 
 # print(quote.replace("Dream", "🛌💭"))
-secret_message = "   Programming in Python is not only powerful but also fun!   ".strip() .upper()
-print(f"{secret_message[15:21]}-{secret_message[34:42]}")
+# secret_message = "   Programming in Python is not only powerful but also fun!   ".strip() .upper()
+# print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 # Task 1.1
 # Expected Output
 # "PYTHON-POWERFUL"
@@ -94,21 +94,21 @@ print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 # Task 1.3 (Home Assignment)
 
 # After the 🔑
-message = "    🚨🔍📱🔑secret_code✌️".strip() .upper()
-idx=message.find("🔑")
-print(message[idx+1:])
+# message = "    🚨🔍📱🔑secret_code✌️".strip() .upper()
+# idx=message.find("🔑")
+# print(message[idx+1:])
 # Clue: find
 
 # Output
 # SECRET_CODE✌️
 #############################################################################
-# def msg(i,emoji):
-#  for r in range(1,5):
-#    print(msg(f"emoji"*r))
-#    print(msg(2, "🍓"))
-#    print(msg(6, "🍍"))
-#    print(msg(4, "🥕"))
-#    print(msg(3))
+# def msg(i,emoji="🔥"):
+#  for r in range(0,i+1):
+#   print(f"{emoji}"*r)
+# (msg(2, "🍓"))
+# (msg(6, "🍍"))
+# (msg(4, "🥕"))
+# (msg(3))
 # Task  1.1 - With function
 
 # emoji(2, "🍓")
@@ -132,9 +132,9 @@ print(message[idx+1:])
 # 🔥🔥
 # 🔥🔥🔥
 #######################################################################
-flowers = ["💐", "🌷", "🌼", "🌷", "🌺"]
-for i in range(len(flowers)):
-    print(f"Flower {i + 1} - {flowers[i]}")
+# flowers = ["💐", "🌷", "🌼", "🌷", "🌺"]
+# for i in range(len(flowers)):
+#     print(f"Flower {i + 1} - {flowers[i]}")
 
 # Task 1.1 - Print all the flower using for loop
 # Hint - range, len
@@ -149,25 +149,68 @@ for i in range(len(flowers)):
 # ## Task 1.4
 # Find longer names (>= 6 letter)
 ## WITHOUT RANGE KE YE USE KRTE HAI 
-characters = ["Hello kitty", "Goku", "Pikachu", "Luffy", "Yuji Itadori", "Levi"]
-chai_hai=[]
-for cha in characters :
-    if len( cha)>=6:
-     chai_hai.append(cha)
+# characters = ["Hello kitty", "Goku", "Pikachu", "Luffy", "Yuji Itadori", "Levi"]
+# chai_hai=[]
+# for cha in characters :
+#     if len( cha)>=6:
+#      chai_hai.append(cha)
 
-print(chai_hai)
+# print(chai_hai)
 
 # ### Expected Output
 # ['Hello kitty', 'Pikachu', 'Yuji Itadori']
 #######################################################################
 # Task 1.3: Double the power
-powers = [2000, 3000, 4000, 1500]
-double_powers=[]
-for power in powers:
-   double_powers.append(power*2)
-print(power)
-print(double_powers)
+# powers = [2000, 3000, 4000, 1500]
+# double_powers=[]
+# for power in powers:
+#    double_powers.append(power*2)
+# print(power)
+# print(double_powers)
 
 # Output
 # doubled_powers -> [4000, 6000, 8000, 3000]
 # powers -> [2000, 3000, 4000, 1500]
+##########################################################################
+# Mix Data types
+pirate = {
+    "name": "Moneky D. Luffy",
+    "age": 25,
+    "crew_name": "Straw hat pirates",
+    "crew_members": ["Zoro", "Sanji", "Nami", "Chopper"],
+    "position": "captain",
+}
+
+
+print(pirate["crew_members"][1])
+pirate["age"]+=1
+print(pirate)
+
+# Increase age by 1
+###########################################################################
+books = [
+    {"title": "Infinite Jest", "rating": 4.5, "genre": "Fiction"},
+    {"title": "The Catcher in the Rye", "rating": 3.9, "genre": "Fiction"},
+    {"title": "Sapiens", "rating": 4.9, "genre": "History"},
+    {"title": "A Brief History of Time", "rating": 4.8, "genre": "Science"},
+    {"title": "Clean Code", "rating": 4.7, "genre": "Technology"},
+]
+
+title_tit=[]
+for book in books : 
+      title_tit.append(book["title"])
+print(title_tit)
+
+title_tite=[]
+for book in books : 
+     if (book["genre"]=="Fiction"):
+      title_tite.append(book["title"])
+print(title_tite)
+
+title_titee=[]
+for book in books : 
+     if (book["rating"]>=4.7):
+      title_titee.append(book["title"])
+print(f"Highest rated books are {title_titee[0]},{title_titee[1]} and {title_titee[2]}")
+
+    
