@@ -47,12 +47,13 @@ print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 # name2=input("please tell me the vice captain name2?:")
 # height=input(f"please tell me the height of {name}?:")
 # height2=input(f"Please tell me the height of {name2}?:")
-# height=int(height)
-# height2=int(height2)
+# height=float(height)
+# height2=float(height2)
+# dif=(height - height2)
 # if height > height2:
-#     print(f"{name} is taller than {name2} by {height - height2} cm")
+#     print(f"{name} is taller than {name2} by {dif} cm")
 # elif height2 > height:
-#     print(f"{name2} is taller than {name} by {height2 - height} cm")
+#     print(f"{name2} is taller than {name} by {dif} cm")
 # else:
 #     print(f"{name} and {name2} have the same height ")
 
@@ -69,7 +70,7 @@ print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 # Case 2:
 # Please enter your fav 🍧?:   pisTa
 # Sorry, we ran out of pista
-# stock5=[ "vanilla","green tea", "lemon", "chocolate","aaam"]
+# stock5=[ "vanilla","green tea", "lemon", "chocolate","aaam"].lower()
 
 # stock6=input("please enter your favorate?:")
 
@@ -79,10 +80,11 @@ print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 #     print(f"Sorry, we ran out of ?:{stock6}")
     
 #########################################################################
-# for i in range(1,6):
+# for i in range(1,4):
 #     print(f" 🍦"* i)
 
-#     hearts=1;
+
+# hearts=1;
 # while hearts <= 5 :
 #   print(f" ❤️ "*hearts)
 #   hearts +=1
@@ -93,8 +95,79 @@ print(f"{secret_message[15:21]}-{secret_message[34:42]}")
 
 # After the 🔑
 message = "    🚨🔍📱🔑secret_code✌️".strip() .upper()
-print(f"{message[-14:10]}{message[10:-1]}")
+idx=message.find("🔑")
+print(message[idx+1:])
 # Clue: find
 
 # Output
 # SECRET_CODE✌️
+#############################################################################
+# def msg(i,emoji):
+#  for r in range(1,5):
+#    print(msg(f"emoji"*r))
+#    print(msg(2, "🍓"))
+#    print(msg(6, "🍍"))
+#    print(msg(4, "🥕"))
+#    print(msg(3))
+# Task  1.1 - With function
+
+# emoji(2, "🍓")
+# emoji(6, "🍍")
+# emoji(4, "🥕")
+# emoji(3)
+
+# 🍓
+# 🍓🍓
+# 🍍
+# 🍍🍍
+# 🍍🍍🍍
+# 🍍🍍🍍🍍
+# 🍍🍍🍍🍍🍍
+# 🍍🍍🍍🍍🍍🍍
+# 🥕
+# 🥕🥕
+# 🥕🥕🥕
+# 🥕🥕🥕🥕
+# 🔥
+# 🔥🔥
+# 🔥🔥🔥
+#######################################################################
+flowers = ["💐", "🌷", "🌼", "🌷", "🌺"]
+for i in range(len(flowers)):
+    print(f"Flower {i + 1} - {flowers[i]}")
+
+# Task 1.1 - Print all the flower using for loop
+# Hint - range, len
+## RANGE US JAGHA USE KRTE  HAI JNHA HAME INDEX VALUE IK JARURAT HOTI HAI
+# Expected output
+# Flower 1 - 💐
+# Flower 2 - 🌷
+# Flower 3 - 🌼
+# Flower 4 - 🌷
+# Flower 5 - 🌺
+##########################################################################
+# ## Task 1.4
+# Find longer names (>= 6 letter)
+## WITHOUT RANGE KE YE USE KRTE HAI 
+characters = ["Hello kitty", "Goku", "Pikachu", "Luffy", "Yuji Itadori", "Levi"]
+chai_hai=[]
+for cha in characters :
+    if len( cha)>=6:
+     chai_hai.append(cha)
+
+print(chai_hai)
+
+# ### Expected Output
+# ['Hello kitty', 'Pikachu', 'Yuji Itadori']
+#######################################################################
+# Task 1.3: Double the power
+powers = [2000, 3000, 4000, 1500]
+double_powers=[]
+for power in powers:
+   double_powers.append(power*2)
+print(power)
+print(double_powers)
+
+# Output
+# doubled_powers -> [4000, 6000, 8000, 3000]
+# powers -> [2000, 3000, 4000, 1500]
