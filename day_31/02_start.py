@@ -173,20 +173,20 @@
 # powers -> [2000, 3000, 4000, 1500]
 ##########################################################################
 # Mix Data types
-pirate = {
-    "name": "Moneky D. Luffy",
-    "age": 25,
-    "crew_name": "Straw hat pirates",
-    "crew_members": ["Zoro", "Sanji", "Nami", "Chopper"],
-    "position": "captain",
-}
+# pirate = {
+#     "name": "Moneky D. Luffy",
+#     "age": 25,
+#     "crew_name": "Straw hat pirates",
+#     "crew_members": ["Zoro", "Sanji", "Nami", "Chopper"],
+#     "position": "captain",
+# }
 
 
-print(pirate["crew_members"][1])
-pirate["age"]+=1
-print(pirate)
+# print(pirate["crew_members"][1])
+# pirate["age"]+=1
+# print(pirate)
 
-# Increase age by 1
+# Increase age by 1,,programing paradigms-function,oop,matlab,procedural
 ###########################################################################
 books = [
     {"title": "Infinite Jest", "rating": 4.5, "genre": "Fiction"},
@@ -212,5 +212,62 @@ for book in books :
      if (book["rating"]>=4.7):
       title_titee.append(book["title"])
 print(f"Highest rated books are {title_titee[0]},{title_titee[1]} and {title_titee[2]}")
+title_titeei=[]
+for book in books : 
+      if (book["rating"]+4.9):
+       title_titeei.append(book["title"])
+print(f"The book available is {title_titeei[2]}")
+
+title_titeeii=[]
+for book in books : 
+      if book["rating"]>5:
+       title_titeeii.append(book["title"])
+print(f"There no books available at this rating 😅")
+
+
+
 
     
+############################################################################
+# ## Tata
+# - Wheels - 4
+# - Engine - v4
+# - Model - Harrier
+# - Doors - 4
+class Car:
+   def __init__(self, Wheels,Engine, Model, Doors):
+    self.Wheels=Wheels
+    self.Engine=Engine
+    self.Model=Model
+    self.Doors=Doors
+
+   def horn(self):
+    return "Vroom Vroom!"
+   def accelater(self):
+     return "100km/h"
+   
+tata = Car(4, "v4", "Harrier" ,5)
+defainder=Car(4,"v8", "hamari",4)
+print(tata.horn())
+print(tata.accelater())
+print(defainder.horn())
+print(tata.Wheels)
+###########################################################################
+# ### Account
+# 1. acc_no
+# 2. name
+# 3. balance
+class Account:
+  def __init__(self,acc_no,name,balance):
+    self.acc_no=acc_no
+    self.name=name
+    self.balance=balance
+  def branch(self):
+    return "Aligarh Uttar pradesh"
+
+account_holder=Account(12345678,"nk",50_000)
+account_holder1=Account(123456789,"rishi",3_00_000)
+account_holder2=Account(1234567890,"pushpa",10_00_000)
+print(account_holder.acc_no)
+print(account_holder1.name,account_holder1.branch())
+print(account_holder2.name,account_holder2.balance,account_holder2.branch())
